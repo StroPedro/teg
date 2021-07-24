@@ -16,16 +16,16 @@ import okoume from "../img/okuome.jpg"
 import tali from "../img/Erythrophleum-ivorense.jpg"
 import azobe from "../img/azobe.jpg"
 
-import M from "materialize-css"
-
+//import M from "materialize-css"
+import M from 'materialize-css/dist/js/materialize.min.js';
 
 const Biodiversidad = (props) => {
-useEffect(()=>{
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.carousel');
-        var instances = M.Carousel.init(elems, options);
-    });
-}) 
+
+ useEffect(()=>{
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems , {});
+ })
+
 return (
     
 <div>
@@ -41,7 +41,7 @@ return (
             <div className="targeta-bio-100">
                 <div className="targetas-bio">
                     <div className="img-targeta-bio">
-                        <img src={bioImg2} alt="" />
+                        <img className="materialboxed" src={bioImg2} alt="" />
                     </div>
                     <div className="link-targeta-bio">
                       
@@ -87,7 +87,7 @@ return (
                    Promoción de Especies Forestales, 2011)
                 </p>
 
-                <img src={okoume} alt="" />
+                <img className="materialboxed" width="650" src={okoume} alt="" />
                 <p className ="okoume-text">okoume</p>
                 <h5>AGRICULTURA</h5>
                 <p>
@@ -132,7 +132,7 @@ return (
             <div className="imagenes-galer">
                 <div className="img-indi">
                     <div className="img-galeria">
-                        <img src={azobe} alt="" />
+                        <img className="materialboxed" src={azobe} alt="" />
                     </div>
                     <div className="nombre-img">
                         <p>azobe</p>
@@ -140,7 +140,7 @@ return (
                 </div>
                 <div className="img-indi">
                     <div className="img-galeria">
-                        <img src={tali} alt="" />
+                        <img className="materialboxed" src={tali} alt="" />
                     </div>
                     <div className="nombre-img">
                         <p>tali</p>
@@ -148,7 +148,7 @@ return (
                 </div>
                 <div className="img-indi">
                     <div className="img-galeria">
-                        <img src={ilomba} alt="" />
+                        <img className="materialboxed" src={ilomba} alt="" />
                     </div>
                     <div className="nombre-img">
                         <p>ilomba</p>

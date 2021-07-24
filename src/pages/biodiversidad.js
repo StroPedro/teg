@@ -16,12 +16,10 @@ import M from "materialize-css"
 
 
 const Biodiversidad = (props) => {
-useEffect(()=>{
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.carousel');
-        var instances = M.Carousel.init(elems, options);
-    });
-}) 
+    useEffect(()=>{
+        var elems = document.querySelectorAll('.materialboxed');
+        var instances = M.Materialbox.init(elems , {});
+    })
 return (
     
 <div>
@@ -37,7 +35,7 @@ return (
             <div className="targeta-bio-100">
                 <div className="targetas-bio">
                     <div className="img-targeta-bio ima">
-                        <img src={bioImg1} alt="" />
+                        <img className="materialboxed" src={bioImg1} alt="" />
                     </div>
                     <div className="link-targeta-bio has">
                       
@@ -80,7 +78,7 @@ return (
             <div className="imagenes-galer">
                 <div className="img-indi">
                     <div className="img-galeria">
-                        <img src={elefante} alt="" />
+                        <img className="materialboxed" src={elefante} alt="" />
                     </div>
                     <div className="nombre-img">
                         <p>gorila</p>
@@ -88,7 +86,7 @@ return (
                 </div>
                 <div className="img-indi">
                     <div className="img-galeria">
-                        <img src={antilope} alt="" />
+                        <img className="materialboxed" src={antilope} alt="" />
                     </div>
                     <div className="nombre-img">
                         <p>antilope</p>
@@ -96,7 +94,7 @@ return (
                 </div>
                 <div className="img-indi">
                     <div className="img-galeria">
-                        <img src={cocodrilo} alt="" />
+                        <img className="materialboxed" src={cocodrilo} alt="" />
                     </div>
                     <div className="nombre-img">
                         <p>cocodrilo</p>
@@ -104,7 +102,7 @@ return (
                 </div>
                 <div className="img-indi">
                     <div className="img-galeria">
-                        <img src={bufalo} alt="" />
+                        <img className="materialboxed" src={bufalo} alt="" />
                     </div>
                     <div className="nombre-img">
                         <p>bufalo</p>
@@ -112,7 +110,7 @@ return (
                 </div>
                 <div className="img-indi">
                     <div className="img-galeria">
-                        <img src={mandril} alt="" />
+                        <img className="materialboxed" src={mandril} alt="" />
                     </div>
                     <div className="nombre-img">
                         <p>mandril</p>
@@ -161,7 +159,7 @@ return (
             <div className="imagenes-galer">
                 <div className="img-indi">
                     <div className="img-galeria">
-                        <img src={celobo} alt="" />
+                        <img className="materialboxed" src={celobo} alt="" />
                     </div>
                     <div className="nombre-img">
                         <p>celobo negro</p>
@@ -169,7 +167,7 @@ return (
                 </div>
                 <div className="img-indi">
                     <div className="img-galeria">
-                        <img src={monoRojo} alt="" />
+                        <img className="materialboxed" src={monoRojo} alt="" />
                     </div>
                     <div className="nombre-img">
                         <p>colebo rojo de pennaut</p>
@@ -177,7 +175,7 @@ return (
                 </div>
                 <div className="img-indi">
                     <div className="img-galeria">
-                        <img src={hipopotamo} alt="" />
+                        <img className="materialboxed" src={hipopotamo} alt="" />
                     </div>
                     <div className="nombre-img">
                         <p>hipopotamo</p>
@@ -185,7 +183,7 @@ return (
                 </div>
                 <div className="img-indi">
                     <div className="img-galeria">
-                        <img src={gorilla} alt="" />
+                        <img className="materialboxed" src={gorilla} alt="" />
                     </div>
                     <div className="nombre-img">
                         <p>gorila</p>
@@ -193,7 +191,7 @@ return (
                 </div>
                 <div className="img-indi">
                     <div className="img-galeria">
-                        <img src={bioImg1} alt="" />
+                        <img className="materialboxed" src={bioImg1} alt="" />
                     </div>
                     <div className="nombre-img">
                         <p>gorila</p>

@@ -75,7 +75,7 @@
     width: 100%;
 }
 .okoume-text{
-    margin-top: -15px;
+    margin-top: -5px;
     font-family: 'Courier New', Courier, monospace !important;
     text-align: center;
 }
@@ -114,14 +114,12 @@
     margin-top: -24px;
 }
 
-
-
-@media screen and (max-width:500px) {
+@media screen and (max-width:700px) {
     .img-targeta-bio img{
-        width: 200px;
+        width: 230px;
     }
     .ima img{
-        width: 200px !important;
+        width: 230px ;
     }
     
     .link-targeta-bio p{
@@ -142,3 +140,31 @@
         font-size: 20px;
     }
 }
+
+@media screen and (max-width:500px) {
+    .img-targeta-bio img{
+        width: 200px;
+    }
+    .ima img{
+        width: 200px ;
+    }
+    
+    .link-targeta-bio p{
+        font-size: 20px;
+     
+    }
+    .bioo h1{
+        font-size: 40px !important;
+    }
+    .has p{
+        font-size: 16px !important;
+    }
+    .img-indi{
+        width: 160px;
+         
+    }
+    .nombre-img p{
+        font-size: 20px;
+    }
+}
+
