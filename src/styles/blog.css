@@ -1,0 +1,162 @@
+
+.containe{
+    margin: 5px;
+}
+.titulo-biodiversidades{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.tema-a-debatir {
+    width: 600px;
+}
+.titulo-biodiversidades h1{
+    font-size: 24px !important;
+    color: #7FCE08;
+}
+.contenedor-text-previ-100{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contenedor-text-previ-50{
+    width: 600px;
+  
+    display: flex;
+    justify-content: center;
+   
+}
+
+.pregunta-de-la-semana-100{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.pregunta-de-la-semana-50 p{
+    text-align: left;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px !important;
+    padding: 5px;
+    color: #212121  ;
+
+}
+
+.res-de-la-semana-100{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.res-de-la-semana-50{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.res-de-la-semana-50-100{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+.res-de-la-semana-50-50{
+    width: 600px;
+    display: flex;
+    margin-top: 5px;
+    flex-wrap: wrap;
+    
+}
+
+.pregunta-de-la-semana-50{
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e8f5e9;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.res-de-la-semana-50-50 span{
+    background-color: #e1f5fe;
+    padding: 3px 5px;
+    border-radius: 5px;
+    font-size: 16px;
+     margin-left: 10px ;
+}
+
+.res-de-la-semana-50-50 p{
+    padding: 1px;
+    line-height: 1.3;
+    border-radius: 10px;
+    margin-top: 2px;
+ 
+}
+.res-de-la-semana-50-50 p p{
+    font-size: 16px !important;
+}
+.res-de-la-semana-50-50 h1 ,.res-de-la-semana-50-50 li , .res-de-la-semana-50-50 h3 , .res-de-la-semana-50-50 h2,.res-de-la-semana-50-50 h4{
+    font-size: 14px !important;
+}
+
+.res-de-la-semana-50-100{
+    display: flex;
+    text-align: left;
+}
+
+@media screen and (max-width:500px) {
+    .res-de-la-semana-50-50{
+        width: 100%;
+        display: flex;
+        margin-top: 5px;
+        
+    }
+    
+    .pregunta-de-la-semana-50{
+        width: 100%;
+        border-radius: 0px !important;
+    }
+    .contenedor-text-previ-50{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+       
+    }
+    .tema-a-debatir {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
