@@ -62,7 +62,7 @@ const Registro = ({history}) => {
            <div className="formID" id = "form">
            <div className ="row formulario-contenedor-text " >
                 <div className ="col s12 texto-encabezado-formulario">
-                    <p>Registrate</p>
+                    <p></p>
                 </div>
                 <form className ="formulario" onSubmit={Enviar} >
                 <div className ="input-field contenedor-input  col s12">

@@ -25,9 +25,11 @@ const  Home = (props) => {
                         <h4></h4>
                     </div>
                     <div className="link-boton">
+                        {isAuthentificated?"":
                         <Link to = "/iniciar" className="btn-small aparecer-back-boton">Inicia session</Link>
-                        <Link to = "/iniciar" className="btn-small aparecer-back-boton">Danos tu punto de vista sobre ....</Link>
-                        <Link to = "/iniciar" className="btn-small no-apareser-boton">Comparte tu proyecto de medio ambiente</Link>
+                        }
+                        <Link to = "/preguntas" className="btn-small aparecer-back-boton">Danos tu punto de vista sobre ....</Link>
+                        <Link to = "#" className="btn-small no-apareser-boton">Comparte tu proyecto de medio ambiente</Link>
                     </div>
 
 

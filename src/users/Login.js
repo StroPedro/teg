@@ -61,7 +61,7 @@ const Login = (props) => {
             <div className="formID" id = "form">
                 <div className ="row formulario-contenedor-text " >
                     <div className ="col s12 texto-encabezado-formulario">
-                        <p>iniciar session</p>
+                        <p></p>
                     </div>
                     <form className ="formulario" onSubmit={Enviar} >
 

@@ -71,11 +71,6 @@ const BarradeNavegacion = () =>{
                   clase = ""
                   />
                   <Enlaces
-                  titulo = "Registrarse"
-                  link = "/registro"
-                  clase = ""
-                  /> 
-                  <Enlaces
                   titulo = "Blog"
                   link = "/preguntas"
                   clase = ""
