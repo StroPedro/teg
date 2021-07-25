@@ -1,4 +1,11 @@
-
+.estilos-de-spiner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contenedor-de-spinner{
+    margin-top: 200px !important;
+}
 .containe{
     margin: 5px;
 }

@@ -65,7 +65,7 @@ const Blog = (props) => {
     const [cargar, setCargar] = useState(false); 
     const [cargarPagina, setCargarPagina] = useState(false); 
     const [mensajeServidor, setMensajeServidor] = useState("");
-    const [spinnerHacerPregunta, setSpinnerHacerPregunta] = useState(false);
+    const [spinnerHacerPreguntas, setSpinnerHacerPreguntas] = useState(false);
     const [elegirForm, setElegirForm] = useState(true);
     const [datoBusqueda , setDatoBusqueda] = useState([]) 
     const [mensajeError , setMensajeError] = useState("");
@@ -107,20 +107,29 @@ const Blog = (props) => {
     const HacerPregunta = async (e) => {
         e.preventDefault()
         if (isAuthentificated) {
-            setSpinnerHacerPregunta(true)
-            console.log(addData)
-            const fs = new FormData()
-            fs.append("user" , window.sessionStorage.getItem('user'))
-            fs.append("res" , addData)
-            const respuesta = await axios.post(`https://app-node-react.herokuapp.com/RESPONteg/${_id}`, fs , {headers :{"Content-Type":"multipart/form-data"}})
-            const respuestaServidor = respuesta.data
-            console.log(respuestaServidor)
-
-            
-            setMensajeServidor(respuestaServidor)
-            setPreview("")
-            setVal("")
-            await TraerRespues()
+            if (addData!="") {
+                setSpinnerHacerPreguntas(true)
+                setCargar(false)
+                console.log(addData)
+                const fs = new FormData()
+                fs.append("user" , window.sessionStorage.getItem('user'))
+                fs.append("res" , addData)
+                const respuesta = await axios.post(`https://app-node-react.herokuapp.com/RESPONteg/${_id}`, fs , {headers :{"Content-Type":"multipart/form-data"}})
+                const respuestaServidor = respuesta.data
+                console.log(respuestaServidor)
+                if (respuestaServidor != "") {
+                    setSpinnerHacerPreguntas(true)
+                }
+                setMensajeServidor(respuestaServidor)
+                setPreview("")
+                setVal("")
+                await TraerRespues()
+            }else{
+                setMensajeError("Respuesta vacia")
+                console.log("ddddddddddddddddddddddddd")
+                var toastHTML = '<span>'+ "No se admite publicaciones vacias" + '</span>';
+                M.toast({html: toastHTML})
+            }
 
 
         }else{
@@ -168,11 +177,12 @@ const Blog = (props) => {
     //setPageActual(datos.data.page)
     console.log(totalPage, "gggggggggggggggggggggggggggggg")
     if (datos.data) {
-        setCargar(true)
-        setSpinnerHacerPregunta(false)
+        
+        setSpinnerHacerPreguntas(false)
         set_ID(datos.data[0]["_id"])
     }else{
         setCargar(false)
+        
     }
     console.log(datos.data)
     
@@ -193,9 +203,9 @@ const Blog = (props) => {
     //setTotalPage(datos.data.totalPages)
     //setPageActual(datos.data.page)
     console.log(totalPage, "gggggggggggggggggggggggggggggg")
-    if (datos.data.docs) {
+    if (datos.data) {
         setCargar(true)
-        setSpinnerHacerPregunta(false)
+        setSpinnerHacerPreguntas(false)
     }else{
         setCargar(false)
     }
@@ -327,6 +337,7 @@ return (
                                 <p>{mensajeError}</p>
                             </div>
                         }
+
                         {isAuthentificated?                
                         <button type="submit" className=" btnn btn-small">Publicar</button>:                               
                         <a onClick = {()=>{setMensajeError("por favor inicia session")}}  className="btnn btn-small">Publicar </a>}                                                  
@@ -337,14 +348,14 @@ return (
     </div>  
     <div className="container titulo-biodiversidades">
         <div className="tema-a-debatir">
-            <h1>tema a debatir esta semana</h1>
+            {cargar?<h1>tema a debatir esta semana</h1>:""}
         </div>
     </div>
     <div className="container">
         <div className="contenedor-text-previ-100">
             <div className="contenedor-text-previ-50">
                 <div className="contenido-teorico">
-                    {ReactHtmlParser(addData)}
+                    {cargar?ReactHtmlParser(addData):""}
                 </div>
             </div>
         </div>
@@ -355,25 +366,27 @@ return (
 
     <div className="containe">
 
-    {preguntasTraidas.map((datos)=>
+    {cargar? 
+        preguntasTraidas.map((datos)=>
             <div className="pregunta-de-la-semana-100">
             <div className="pregunta-de-la-semana-50">
                 <p>{datos["tegpre"]}</p>
             </div>
             </div>
-    )}
+        
+    ):""}
 
     </div>
 
     <div className="container titulo-biodiversidades">
         <div className="tema-a-debatir">
-            <h1>Respuestas</h1>
+            {cargar?<h1>Respuestas</h1>:""}
         </div>
     </div>
     <div className="containe">
-       
+       {cargar?
 
-        {respuestTraidas.map((datos)=>
+        respuestTraidas.map((datos)=>
             <div className="res-de-la-semana-100">
          
                <div className="res-de-la-semana-50-100">
@@ -401,9 +414,20 @@ return (
                </div>
       
           </div>
-        )}
-
-
+        )
+    :
+    <div className ="estilos-de-spiner">
+    <div className ="contenedor-de-spinner">
+    <Loader
+            type="TailSpin"
+            color="#0d47a1"
+            secondaryColor = "#0d47a1"
+            height={40}
+            width={40}        
+    />
+    </div>
+    </div>
+    }
  
     </div>
     
