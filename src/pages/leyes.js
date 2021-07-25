@@ -62,6 +62,13 @@ return (
                     Ministerio de Pesca y Medio Ambiente
                 </p>
 
+
+                <h5>Ley Nº 8/1988 - Reguladora de la fauna silvestre, caza y áreas protegidas. 
+                </h5>
+                <p>
+                   Para mas informacion puedes consultar este <a href="http://extwprlegs1.fao.org/docs/pdf/eqg11874.pdf">documento pdf </a>
+                </p>
+
             </div>
         </div>
     </div>

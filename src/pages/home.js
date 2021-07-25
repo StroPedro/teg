@@ -9,6 +9,7 @@ import BOSQUES from "../img/bosque-01.jpg";
 import BIODIVERCIDAD from "../img/biodi.jpg";
 import LEYES from "../img/leyes-01.jpg";
 import BlogImg from "../img/image-blog.jpg";
+import Reserva from "../img/reserva.webp"
 
 const  Home = (props) => {
    const {isAuthentificated , setIsAuthentificated} = useContext(Auth)
@@ -55,7 +56,7 @@ const  Home = (props) => {
                             </div>
                             <div className="link-targeta">
                                 <Link to="/biodiversidad">
-                                    biodiversidad de G.E
+                                    Biodiversidad de G.E
                                 </Link>
                             </div>
                         </div>
@@ -67,7 +68,7 @@ const  Home = (props) => {
                             </div>
                             <div className="link-targeta">
                                 <Link to="/bosques">
-                                sobre bosques de G.E 
+                                Sobre bosques de G.E 
                                 </Link>
                             </div>
                         </div>
@@ -83,6 +84,22 @@ const  Home = (props) => {
                             <div className="link-targeta">
                                 <Link to="/leyes">
                                     Articulos y normas 
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div className="targeta-100">
+                        <div className="targetas">
+                            <div className="img-targeta">
+                                <img src="" alt="" />
+                            </div>
+                            <div className="link-targeta">
+                                <Link to="/reservas">
+                                    Reservas naturales
                                 </Link>
                             </div>
                         </div>

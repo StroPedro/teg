@@ -16,6 +16,7 @@ import RegisT from './suspenseLasi/RegisT'
 import BiodiverLaze from './suspenseLasi/Biodi'
 import BosquesLaze from './suspenseLasi/Bosquess'
 import Leyess from './suspenseLasi/LLeyes'
+import Reservass from './suspenseLasi/RReserva'
 
 
 import './styles/Respuestas.css'
@@ -36,6 +37,7 @@ function App(){
                             <Route exact  path= "/biodiversidad" component = {BiodiverLaze}/>
                             <Route exact  path= "/leyes" component = {Leyess}/>
                             <Route exact  path= "/bosques" component = {BosquesLaze}/>
+                            <Route exact  path= "/reservas" component = {Reservass}/>
                             <AuthentificatedRoute  path = "/profil" component = {Profil}/>
 
                             <Route   component = {PageNotFoun}/>                       

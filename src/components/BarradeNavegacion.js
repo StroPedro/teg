@@ -26,26 +26,31 @@ const BarradeNavegacion = () =>{
         <div className="nav-wrapper container">
               <Link to="/" className = "brand-logo left ">  M </Link>              
           <ul id="nav-mobile" className ="right hide-on-med-and-down">  
-              <Enlaces
-              titulo = "Blog"
-              link = "/preguntas"
-              clase = ""
-              /> 
-              <Enlaces
-              titulo = "biodiversidad"
-              link = "/biodiversidad"
-              clase = ""
-              />
-              <Enlaces
-              titulo = "bosque"
-              link = "/bosques"
-              clase = ""
-              />
-              <Enlaces
-                  titulo = "leyes"
+                  <Enlaces
+                  titulo = "Blog"
+                  link = "/preguntas"
+                  clase = ""
+                  />
+                  <Enlaces
+                  titulo = "Bosques"
+                  link = "/bosques"
+                  clase = ""
+                  />   
+                  <Enlaces
+                  titulo = "Biodiversidad"
+                  link = "/biodiversidad"
+                  clase = ""
+                  />
+                  <Enlaces
+                  titulo = "Reservas"
+                  link = "/reservas"
+                  clase = ""
+                  /> 
+                  <Enlaces
+                  titulo = "Leyes"
                   link = "/leyes"
                   clase = ""
-              />  
+                  />  
               <li>< Link onClick = {handleClick}> Salir </Link> </li>           
           </ul>     
           <a href="#" data-target="slide-out" className ="sidenav-trigger right menu-btn"><i className ="material-icons grey-text ">menu</i></a>             
@@ -76,17 +81,22 @@ const BarradeNavegacion = () =>{
                   clase = ""
                   />
                   <Enlaces
-                  titulo = "bosque"
+                  titulo = "Bosques"
                   link = "/bosques"
                   clase = ""
                   />   
                   <Enlaces
-                  titulo = "biodiversidad"
+                  titulo = "Biodiversidad"
                   link = "/biodiversidad"
                   clase = ""
                   />
                   <Enlaces
-                  titulo = "leyes"
+                  titulo = "Reservas"
+                  link = "/reservas"
+                  clase = ""
+                  /> 
+                  <Enlaces
+                  titulo = "Leyes"
                   link = "/leyes"
                   clase = ""
                   />             

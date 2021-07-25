@@ -36,8 +36,8 @@ return (
         <div className="bio-teoria-conte-prin">
             <div className="bio-teoria">
                 <h1 className = "bio-teoria-sub">ACERCA DE G.E</h1>
-                <p>Guinea Ecuatorial es un pais de extension limitada que se situa en el corazon del golfo de Guinea.
-                     su emplazamiento geografico en la cuenca del Rio Congo, hace de el un pais rico y exhuberante.
+                <p>Guinea Ecuatorial es un pais de extensión limitada que se sitúa en el corazón del golfo de Guinea.
+                     su emplazamiento geográfico en la cuenca del Río Congo, hace de él un país rico y exhuberante.
                      <br/> 
                      Su riqueza abarca
                      desde su subsuelo hasta sus aguas que albergan una biodiversidad de especies tanto del reino animal como del vegetal.
@@ -52,8 +52,8 @@ return (
         <div className="bio-teoria-conte-prin">
             <div className="bio-teoria">
                 <p>
-                    Las multiples especies biológicas que tiene G.E se hayan repartidas principalmente en las dos regiones mas importantes del pais,
-                    la region continental conocida comunmente como Rio Muni y la region insular o isla de Bioko. Sin embargo las islas de Annobon
+                    Las múltiples especies biológicas que tiene G.E se hayan repartidas principalmente en las dos regiones más importantes del país,
+                    la Región Continental conocida comúnmente como Rio Muni y la Región Insular o isla de Bioko. Sin embargo las islas de Annobon
                     , Corisco, Elobey Grande y Elobey Chico ofrecen una gran variedad de especies.
                 </p>
             </div>
