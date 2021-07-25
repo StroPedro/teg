@@ -167,7 +167,7 @@ const Blog = (props) => {
    const TraerPreguntas = async () =>{
     const datos = await axios({
         method:'get' , 
-        url : '/cogerPreguntaTeg', 
+        url : 'https://app-node-react.herokuapp.com/cogerPreguntaTeg', 
     })
     console.log(datos.data[0]["_id"] , "ffffffffffffffffffffffff")
     setPreguntasTraida(datos.data)
@@ -194,7 +194,7 @@ const Blog = (props) => {
     }
     const datos = await axios({
         method:'get' , 
-        url : '/cogerRespuestasTeg', 
+        url : 'https://app-node-react.herokuapp.com/cogerRespuestasTeg', 
     })
     console.log(datos.data , "ffffffffffffffffffffffff")
     setrespuestTraidas(datos.data)
