@@ -431,6 +431,56 @@ return (
  
     </div>
     
+{!cargar?    <footer class="page-footer page-footer-blog grey lighten-3  ">
+            <div class="container  ">
+                <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="grey-text text-darken-4">Nota :</h5>
+                    <p class="grey-text text-darken-4">Esta pagina aun esta en proceso de desarrollo</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="grey-text text-darken-4">Menu</h5>
+                    <ul>
+                    <li><Link class="grey-text text-darken-4" to ="/preguntas">Blog</Link></li>
+                    <li><Link class="grey-text text-darken-4" to ="/bosques">Bosques de G.E</Link></li>
+                    <li><Link class="grey-text text-darken-4" to ="/biodiversidad">biodiversidad</Link></li>
+                    <li><Link class="grey-text text-darken-4" to ="/leyes">Leyes</Link></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container grey-text text-darken-4">
+                © 2021 credo por pedro ndong todos los derechos reservados
+                <a class="grey-text text-lighten-4 right" href="#!"></a>
+                </div>
+            </div>
+    </footer>
+    :<footer class="page-footer  grey lighten-3  ">
+    <div class="container  ">
+        <div class="row">
+        <div class="col l6 s12">
+            <h5 class="grey-text text-darken-4">Nota :</h5>
+            <p class="grey-text text-darken-4">Esta pagina aun esta en proceso de desarrollo</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+            <h5 class="grey-text text-darken-4">Menu</h5>
+            <ul>
+            <li><Link class="grey-text text-darken-4" to ="/preguntas">Blog</Link></li>
+            <li><Link class="grey-text text-darken-4" to ="/bosques">Bosques de G.E</Link></li>
+            <li><Link class="grey-text text-darken-4" to ="/biodiversidad">biodiversidad</Link></li>
+            <li><Link class="grey-text text-darken-4" to ="/leyes">Leyes</Link></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container grey-text text-darken-4">
+        © 2021 credo por pedro ndong todos los derechos reservados
+        <a class="grey-text text-lighten-4 right" href="#!"></a>
+        </div>
+    </div>
+</footer>}
 </div>
     )
 }

@@ -8,6 +8,7 @@ import M from "materialize-css"
 import BOSQUES from "../img/bosque-01.jpg";
 import BIODIVERCIDAD from "../img/biodi.jpg";
 import LEYES from "../img/leyes-01.jpg";
+import BlogImg from "../img/image-blog.jpg";
 
 const  Home = (props) => {
    const {isAuthentificated , setIsAuthentificated} = useContext(Auth)
@@ -40,8 +41,7 @@ const  Home = (props) => {
                 <div className="informacion-page-objetivo">
                     <p className="letra-objetivo">
                         esta pagina esta hecha para brindar informacion sobre la biodivercidad ,
-                        sobre bosques de G.E y en esta pagina tambien podras compartir tus proyectos y 
-                        tambien hay un blog en el que podras debatir diferentes temas del medio ambiente
+                        y los bosques de G.E 
                     </p>
                 </div>
             </div>
@@ -55,7 +55,7 @@ const  Home = (props) => {
                             </div>
                             <div className="link-targeta">
                                 <Link to="/bosques">
-                                sobre bosques de G.E y en esta pagina tambien podras compartir
+                                sobre bosques de G.E 
                                 </Link>
                             </div>
                         </div>
@@ -68,7 +68,7 @@ const  Home = (props) => {
                             </div>
                             <div className="link-targeta">
                                 <Link to="/biodiversidad">
-                                    La biodiversidad de G.E
+                                    biodiversidad de G.E
                                 </Link>
                             </div>
                         </div>
@@ -81,7 +81,20 @@ const  Home = (props) => {
                             </div>
                             <div className="link-targeta">
                                 <Link to="/leyes">
-                                    Articulos y normas que protegen el medio ambiente
+                                    Articulos y normas 
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="targeta-100">
+                        <div className="targetas">
+                            <div className="img-targeta">
+                                <img src={BlogImg} alt="" />
+                            </div>
+                            <div className="link-targeta">
+                                <Link to="/preguntas">
+                                    Visita nuestro blog
                                 </Link>
                             </div>
                         </div>
@@ -89,6 +102,34 @@ const  Home = (props) => {
 
                 </div>
             </div>
+
+
+
+            <footer class="page-footer grey lighten-3">
+            <div class="container  ">
+                <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="grey-text text-darken-4">Nota :</h5>
+                    <p class="grey-text text-darken-4">Esta pagina aun esta en proceso de desarrollo</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="grey-text text-darken-4">Menu</h5>
+                    <ul>
+                    <li><Link class="grey-text text-darken-4" to ="/preguntas">Blog</Link></li>
+                    <li><Link class="grey-text text-darken-4" to ="/bosques">Bosques de G.E</Link></li>
+                    <li><Link class="grey-text text-darken-4" to ="/biodiversidad">biodiversidad</Link></li>
+                    <li><Link class="grey-text text-darken-4" to ="/leyes">Leyes</Link></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container grey-text text-darken-4">
+                © 2021 credo por pedro ndong todos los derechos reservados
+                <a class="grey-text text-lighten-4 right" href="#!"></a>
+                </div>
+            </div>
+            </footer>
         </div>
     )    
 

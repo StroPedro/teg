@@ -32,6 +32,7 @@ import {logout} from '../services/AuthApi'
             <Link onClick = {Destruir} className="collection-item" to = "/leyes">Leyes</Link>
             <Link onClick = {Destruir} className="collection-item" to = "/bosques">Bosques</Link>
             <Link onClick = {Destruir} className="collection-item" to = "/biodiversidad">Biodiversidad</Link>
+            {isAuthentificated?"":<Link onClick = {Destruir} className="collection-item" to = "/iniciar">Iniciar sesion</Link>}
            
         </ul>
     )

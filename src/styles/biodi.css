@@ -1,5 +1,11 @@
 /*targetas*/
-
+.page-footer-leyes {
+    position: relative !important;
+    margin-bottom: 0px !important;
+    bottom: -1px !important;
+    margin-top: 100px;
+    
+}
 .titulo-biodiversidad{
     width: 90%;
     display: flex;

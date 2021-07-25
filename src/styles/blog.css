@@ -1,7 +1,13 @@
+.page-footer-blog{
+    position: relative !important;
+    margin-top: 200px !important;
+}
+
 .estilos-de-spiner{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 100px !important;
 }
 .contenedor-de-spinner{
     margin-top: 200px !important;
