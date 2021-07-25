@@ -466,10 +466,10 @@ return (
         <div class="col l4 offset-l2 s12">
             <h5 class="grey-text text-darken-4">Menu</h5>
             <ul>
-            <li><Link class="grey-text text-darken-4" to ="/preguntas">Blog</Link></li>
-            <li><Link class="grey-text text-darken-4" to ="/bosques">Bosques de G.E</Link></li>
-            <li><Link class="grey-text text-darken-4" to ="/biodiversidad">biodiversidad</Link></li>
-            <li><Link class="grey-text text-darken-4" to ="/leyes">Leyes</Link></li>
+            <li><Link class="green-text " to ="/preguntas">Blog</Link></li>
+            <li><Link class="green-text " to ="/bosques">Bosques de G.E</Link></li>
+            <li><Link class="green-text " to ="/biodiversidad">biodiversidad</Link></li>
+            <li><Link class="green-text " to ="/leyes">Leyes</Link></li>
             </ul>
         </div>
         </div>
