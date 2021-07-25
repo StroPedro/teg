@@ -167,7 +167,7 @@ const Blog = (props) => {
    const TraerPreguntas = async () =>{
     const datos = await axios({
         method:'get' , 
-        url : 'https://app-node-react.herokuapp.com/cogerPreguntaTeg', 
+        url : '/cogerPreguntaTeg', 
     })
     console.log(datos.data[0]["_id"] , "ffffffffffffffffffffffff")
     setPreguntasTraida(datos.data)
@@ -194,7 +194,7 @@ const Blog = (props) => {
     }
     const datos = await axios({
         method:'get' , 
-        url : 'https://app-node-react.herokuapp.com/cogerRespuestasTeg', 
+        url : '/cogerRespuestasTeg', 
     })
     console.log(datos.data , "ffffffffffffffffffffffff")
     setrespuestTraidas(datos.data)
@@ -420,8 +420,8 @@ return (
     <div className ="contenedor-de-spinner">
     <Loader
             type="TailSpin"
-            color="#0d47a1"
-            secondaryColor = "#0d47a1"
+            color="#66bb6a"
+            secondaryColor = "#66bb6a"
             height={40}
             width={40}        
     />
