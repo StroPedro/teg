@@ -88,7 +88,9 @@
 .bio-teoria h1 , .bio-teoria h5{
     color: #7FCE08;
 }
-
+.bio-teoria-sub{
+    font-size: 40px !important;
+}
 /*imagenes 1 galeria*/
 .imagenes-galer-prin{
     width: 100%;

@@ -51,6 +51,18 @@ const  Home = (props) => {
                     <div className="targeta-100">
                         <div className="targetas">
                             <div className="img-targeta">
+                                <img src={BIODIVERCIDAD} alt="" />
+                            </div>
+                            <div className="link-targeta">
+                                <Link to="/biodiversidad">
+                                    biodiversidad de G.E
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="targeta-100">
+                        <div className="targetas">
+                            <div className="img-targeta">
                                 <img src={BOSQUES} alt="" />
                             </div>
                             <div className="link-targeta">
@@ -61,18 +73,7 @@ const  Home = (props) => {
                         </div>
                     </div>
 
-                    <div className="targeta-100">
-                        <div className="targetas">
-                            <div className="img-targeta">
-                                <img src={BIODIVERCIDAD} alt="" />
-                            </div>
-                            <div className="link-targeta">
-                                <Link to="/biodiversidad">
-                                    biodiversidad de G.E
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
+
 
                     <div className="targeta-100">
                         <div className="targetas">

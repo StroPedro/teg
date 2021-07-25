@@ -12,6 +12,8 @@ import celobo from "../img/celobo-negro.jpg"
 import hipopotamo from "../img/hipopotamo.jpg"
 import gorilla from "../img/gorilla.jpg"
 import monoRojo from "../img/mon-de-ore-rojos.jpg"
+import suimanga from "../img/suimanga.jpg"
+import bosque from "../img/bosque-principal.jpg"
 import M from "materialize-css"
 
 
@@ -30,19 +32,18 @@ return (
             <h1>BIODIVERSIDAD DE G.E</h1>
         </div>
     </div>
-    <div className="container ">
-        <div className="contenedor-targetas-bio">
-            <div className="targeta-bio-100">
-                <div className="targetas-bio">
-                    <div className="img-targeta-bio ima">
-                        <img className="materialboxed" src={bioImg1} alt="" />
-                    </div>
-                    <div className="link-targeta-bio has">
-                      
-                        <p>Hasta la fecha se han registrado aproximadamente 141 especies de mamíferos y 392 especies de aves.</p> 
-                        
-                    </div>
-                </div>
+    <div className="container">
+        <div className="bio-teoria-conte-prin">
+            <div className="bio-teoria">
+                <h1 className = "bio-teoria-sub">ACERCA DE G.E</h1>
+                <p>Guinea Ecuatorial es un pais de extension limitada que se situa en el corazon del golfo de Guinea.
+                     su emplazamiento geografico en la cuenca del Rio Congo, hace de el un pais rico y exhuberante.
+                     <br/> 
+                     Su riqueza abarca
+                     desde su subsuelo hasta sus aguas que albergan una biodiversidad de especies tanto del reino animal como del vegetal.
+
+                </p>
+                <img className="materialboxed" width="650" src={bosque} alt="" />
             </div>
         </div>
     </div>
@@ -50,11 +51,10 @@ return (
     <div className="container">
         <div className="bio-teoria-conte-prin">
             <div className="bio-teoria">
-                <p>Dada la escasez de información sobre los animales y plantas presentes en Guinea Ecuatorial, solo es
-                    posible realizar un análisis superficial de la biodiversidad. Sin embargo, la importancia de Bioko
-                    como sitio de vidas insulares únicas y la posición de Río Muní como refugio del pleistoceno, hacen
-                    que Guinea Ecuatorial sea un país importante por su diversidad biológica. Hasta la fecha se han
-                    registrado 141 especies de mamíferos y 392 especies de aves.
+                <p>
+                    Las multiples especies biológicas que tiene G.E se hayan repartidas principalmente en las dos regiones mas importantes del pais,
+                    la region continental conocida comunmente como Rio Muni y la region insular o isla de Bioko. Sin embargo las islas de Annobon
+                    , Corisco, Elobey Grande y Elobey Chico ofrecen una gran variedad de especies.
                 </p>
             </div>
         </div>
@@ -62,7 +62,7 @@ return (
     <div className="container">
         <div className="bio-teoria-conte-prin">
             <div className="bio-teoria">
-                <h1>RIO MUNI</h1>
+                <h1 className = "bio-teoria-sub">RIO MUNI</h1>
                 <p>Río Muní contiene importantes poblaciones de mamíferos grandes como el gorila (Gorilla gorilla),
                     el chimpancé (pan troglodytes), el elefante (Loxodonta africana), el bufalo (Synceros caffer nanus)
                     y el pequeño antílope de bosque. Los Primates de particular importancia para la conservación en el
@@ -140,7 +140,7 @@ return (
     <div className="container">
         <div className="bio-teoria-conte-prin">
             <div className="bio-teoria">
-                <h1>ISLAS</h1>
+                <h1 className = "bio-teoria-sub">ISLAS</h1>
                 <p>
                     En Bioko los principales primates de interés son subespecies endémicas de mandril (Mandrillus
                     rencophaeus poensis), el mono de prenss (ceropithecus preussi insularis), el mono de orejas rojos
@@ -191,10 +191,10 @@ return (
                 </div>
                 <div className="img-indi">
                     <div className="img-galeria">
-                        <img className="materialboxed" src={bioImg1} alt="" />
+                        <img className="materialboxed" src={suimanga} alt="" />
                     </div>
                     <div className="nombre-img">
-                        <p>gorila</p>
+                        <p>suimanga</p>
                     </div>
                 </div>
             </div>
